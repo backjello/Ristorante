@@ -1,0 +1,14 @@
+<div>
+    <h1 matDialogTitle class="text-center">Numero del tavolo</h1>
+    <div matDialogContent>
+        <form [formGroup]="form" class="row">
+            <span class="text-center">Seleziona il numero del tuo tavolo</span>
+            <mat-form-field class="text-center">
+                <input matInput class="text-center input" type="number" min="1" max="20" formControlName="numeroTavolo" placeholder="Seleziona il numero del tuo tavolo">
+            </mat-form-field>
+        </form>
+    </div>
+    <div mat-dialog-actions class="row bottone">
+        <button class="btn btn-primary text-center" [mat-dialog-close]="numeroTavolo" (click)="conferma()">Conferma</button>
+    </div>
+</div>
