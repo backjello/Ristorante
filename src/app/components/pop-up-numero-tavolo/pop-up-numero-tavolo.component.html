@@ -5,10 +5,11 @@
             <span class="text-center">Seleziona il numero del tuo tavolo</span>
             <mat-form-field class="text-center">
                 <input matInput class="text-center input" type="number" min="1" max="20" formControlName="numeroTavolo" placeholder="Seleziona il numero del tuo tavolo">
+            <mat-error>Inserisci un numero da 1 a 20</mat-error>
             </mat-form-field>
         </form>
     </div>
     <div mat-dialog-actions class="row bottone">
-        <button class="btn btn-primary text-center" [mat-dialog-close]="numeroTavolo" (click)="conferma()">Conferma</button>
+        <button class="btn btn-primary text-center" *ngIf="!form.invalid" (click)="conferma()">Conferma</button>
     </div>
 </div>

@@ -10,13 +10,19 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BarraLateraleComponent } from './components/barra-laterale/barra-laterale.component';
+import { ListaPiattiComponent } from './components/lista-piatti/lista-piatti.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PopUpNumeroTavoloComponent
+    PopUpNumeroTavoloComponent,
+    BarraLateraleComponent,
+    ListaPiattiComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,6 @@ export class LocalStorageService {
   }
 
   prendiNumeroTavolo(){
-    localStorage.getItem('numeroTavolo')
+    return localStorage.getItem('numeroTavolo')
   }
 }

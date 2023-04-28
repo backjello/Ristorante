@@ -15,10 +15,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.dialog.open(PopUpNumeroTavoloComponent,{
-      height:'400px',
-      width:'800px'
-    })
+    
   }
 
   title = 'Ristorante';
